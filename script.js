@@ -1,4 +1,4 @@
-import bank from "./questionbank.json" assert { type: "json" };
+import bank from "./question.json" assert { type: "json" };
 
 const quizWrapper = document.getElementById("quiz");
 const questionElem = document.querySelector("#question");
@@ -19,6 +19,7 @@ function loadQuestion() {
   let currentQuestion = quizData[questionShown];
 
   questionElem.innerHTML = currentQuestion.question;
+  // they would attempt this on their own
   answerA.innerHTML = currentQuestion.a;
   answerB.innerHTML = currentQuestion.b;
   answerC.innerHTML = currentQuestion.c;
