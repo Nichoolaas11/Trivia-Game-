@@ -1,4 +1,17 @@
-.box {
+* {
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://wallpapers.com/images/hd/rick-and-morty-under-the-sea-ocidh9za5jy6pao4.jpg");
+    margin: 0;
+  }
+  
+  .box {
     background-color: rgba(198, 197, 185, 0.7);
     width: 55vw;
     min-height: 400px;
@@ -14,7 +27,6 @@
     font-size: 2rem;
   }
   
-  /* DONE! This line forward is on Notion */
   label,
   input {
     cursor: pointer;
